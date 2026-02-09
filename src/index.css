@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+/* ============================================
+   Tailwind CSS v4 Configuration
+   ============================================ */
+
+/* Enable class-based dark mode (required for manual toggle) */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Custom design tokens / theme extensions */
+@theme {
+    /* Brand Colors */
+    --color-primary: #09617c;
+    --color-primary-dark: #074a5f;
+    --color-primary-light: #e0eff4;
+
+    /* Background Colors */
+    --color-background-light: #f6f8f8;
+    --color-background-dark: #101e22;
+
+    /* Surface Colors */
+    --color-surface-light: #ffffff;
+    --color-surface-dark: #182c33;
+
+    /* Font Family */
+    --font-display: "Inter", sans-serif;
+
+    /* Border Radius */
+    --radius: 0.5rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+}
+
+/* ============================================
+   Global Styles
+   ============================================ */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #cbd5e1;
+    border-radius: 20px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+    background-color: #475569;
+}
+
+/* ============================================
+   Glassmorphism Effect
+   ============================================ */
+
+.glassmorphism {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dark .glassmorphism {
+    background: rgba(16, 30, 34, 0.8);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}

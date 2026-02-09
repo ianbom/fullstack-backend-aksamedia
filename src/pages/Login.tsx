@@ -158,7 +158,7 @@ export function LoginPage() {
                             <div className="text-xs text-slate-500 dark:text-slate-400">
                                 <p className="font-bold text-slate-700 dark:text-slate-300 mb-1">Demo Access:</p>
                                 <div className="font-mono bg-white dark:bg-slate-900 rounded p-1.5 border border-slate-200 dark:border-slate-700 inline-block">
-                                    <span className="select-all">U: admin</span> &nbsp; <span className="select-all">P: pastibisa</span>
+                                    <span className="select-all">U: admin</span> &nbsp; <span className="select-all">P: admin123</span>
                                 </div>
                             </div>
                         </div>

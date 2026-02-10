@@ -244,7 +244,6 @@ frontend-aksamedia/
 **Implementation:**
 - `src/pages/employees/EmployeeForm.tsx`
 
-## 📸 Screenshots
 
 ### Dashboard
 Modern dashboard with employee statistics and recent additions.
@@ -310,13 +309,6 @@ Edit page size in `src/pages/employees/EmployeeList.tsx`:
 const ITEMS_PER_PAGE = 10; // Change to your preferred value
 ```
 
-## 🐛 Known Limitations
-
-- No backend API integration (localStorage only)
-- No real authentication/authorization
-- No data export/import functionality
-- No multi-user support
-- Browser storage limitations apply
 
 ## 📄 License
 
